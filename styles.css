@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFB3BA;
+    transition: background-color 0.5s ease;
+    font-family: 'Nunito', sans-serif;
+}
+
+#quote-box {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quote {
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    position: relative; /* Make container relative for absolute positioning */
+}
+.logo {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.quote {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.6s ease-in-out;
+    display: ruby-text-container; /* Initially hide quotes */
+}
+.quote.show {
+    display: block; /* Show quotes when .show class is applied */
+}
+.quote:hover {
+    color: #007bff; /* Change color on hover */
+}
+.logo:hover {
+    transform: scale(1.1); /* Scale logo on hover */
+}
+.toggle-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+.toggle-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
